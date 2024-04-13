@@ -9,39 +9,33 @@
     <link rel="stylesheet" href="assets/css/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> >
-
-
 </head>
 
 <body class="bg-gray-100">
 
     <section class="py-10 md:py-16">
-
         <div class="container max-w-screen-xl mx-auto px-4">
-
             <nav class="flex items-center justify-between mb-40">
-                <img src="assets/image/navbar-logo.png" alt="Logo">
+                <a href="/index2.html">
+                    <img src="assets/image/navbar-logo.png" alt="Logo">
+                </a>
                 <br>
-                <br>
-                <button class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">Obtener mi CV</button>
+                <button
+                    class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">Obtener
+                    mi CV
+                </button>
             </nav>
-            <br>
             <br>
             <div class="text-center">
                 <div class="flex justify-center mb-16">
                     <img src="https://avatars.githubusercontent.com/u/19?v=4" class="rounded-full" alt="Image">
                 </div>
-
                 <h2 class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">John Doe</h2>
-
-
             </div>
-
         </div>
-
     </section>
-    <section>
-        <form action="registrar.php" method="post">
+    <section class="mb-10">
+        <form action="registrar.php" method="post" class="w-full flex flex-col items-center justify-center">
             <div>
                 <label for="name"></label>
                 <input type="text" id="name" name="user_name" placeholder="Ingrese su nombre" required>
@@ -57,11 +51,9 @@
                 <input type="email" id="email" name="user_email" placeholder="Ingrese correo" r equired>
             </div>
             <br>
-            <div>
-                <label for="celular"></label>
-                <input type="tel" id="celular" name="user_celular" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Numero de celular" required>
-                <br>
-                <small>Formato: 123-456-7890</small>
+            <div class="flex flex-col">
+                <label for="celular">Telefono</label>
+                <input type="tel" id="celular" name="user_celular" placeholder="1234567890" required>
             </div>
             <br>
             <div>
@@ -71,61 +63,11 @@
 
             <br>
             <br>
-            <div class="button">
-                <button type="submit">Enviar mensaje</button>
-
-
+            <div>
+                <button class="bg-gray-300 w-60 h-10 rounded-md" type="submit">Enviar mensaje</button>
             </div>
         </form>
-
     </section>
-    <br>
-    <br>
-
-
-
-    <footer class="py-10 md:py-16 mb-20 md:mb-40 lg::mb-52">
-
-        <div class="container max-w-screen-xl mx-auto px-4">
-
-            <div class="text-center">
-
-
-
-                <div class="flex items-center justify-center space-x-8">
-                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="twitter" class="text-gray-500 hover:text-gray-800 transition ease-in-out duration-500"></i>
-                    </a>
-
-                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="dribbble" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-                    </a>
-
-                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="facebook" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-                    </a>
-
-                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="codepen" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-                    </a>
-
-                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="at-sign" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-                    </a>
-
-                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="instagram" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-    </footer>
-
-
-
-    <script src="../js/scripts.js"></script>
 
 </body>
 
